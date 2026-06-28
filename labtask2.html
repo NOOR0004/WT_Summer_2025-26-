@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Service Portal </title>
+        <link rel = "stylesheet" href="labtask2.css">
+    </head>
+    <body>
+        <header>
+
+            <center>
+                 <h1>Student Service Request Portal </h1>
+             </center>
+             <p> Digitizing student services for transcript request, ID card issues and General Inquiries </p>
+        
+        </header>
+        <nav>
+            <a href = "#"> Home</a>
+            <a href = "#"> Services</a>
+            <a href = "#"> Contact</a>
+        </nav>
+
+        <main>
+            <section>
+                <h3> Available Service </h3>
+                <p> Student can submit official request to the student affairs department. Please fill up the form.</p>
+            </section>
+            
+            <form>
+                <h3> Service Request Form </h3>
+
+                <label> Student Name:</label><br>
+                <input type = "text" name = "studentName" required>
+                <br><br>
+
+                <label> Student ID:</label><br>
+                <input type = "text" name = "studentID" maxlength="10" required>
+                <br><br>
+
+                <label> Email Address:</label><br>
+                <input type = "email" name = "email" required>
+                <br><br>
+
+                <label> Service Type:</label><br>
+                <select name = "serviceType">
+                    <option> Transcript Request </option>
+                     <option> ID Card Issue </option>
+                      <option> General Inquiry </option>
+                </select>
+                <br><br>
+
+                <label> Urgency Level: </label><br>
+                <input type = "radio" name = "urgency" value = "high" > High <br>
+                <input type = "radio" name = "urgency" value = "moderate" > Moderate <br>
+                <input type = "radio" name = "urgency" value = "low" > Low
+                <br><br>
+
+                <label> Additional Details: </label><br>
+                <textarea name = "details" rows = "4" cols = "30"><</textarea>
+                <br><br>
+
+                <input type = "submit" value = "Submit Request">
+            </form>
+        </main>
+
+        <footer>
+            <p> 2026 Student Affairs Department. All Rights Reserved. </p>
+        </footer>
+    </body>
+</html>
